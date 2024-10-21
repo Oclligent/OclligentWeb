@@ -1,0 +1,300 @@
+.industries-we-serve-body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: calc(6vh + 44px);
+}
+
+.industries-title-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.industries-title{
+    font-family: var(--font-poppins-bold);
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.industries-data-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /*display: flex;
+    grid-template-columns: repeat(4,1fr);*/
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    -webkit-row-gap: 100px;
+    row-gap: 100px;
+    -webkit-column-gap: 60px;
+    column-gap: 60px;
+    margin-top: 6rem;
+
+}
+
+.industries-data-wrapper{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.insustry-card{
+    display: flex;
+    width: 235px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.insustry-card h2{
+    font-family: var(--font-poppins);
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 1.5rem;
+}
+
+.insustry-card img{
+    width: 70px;
+    height: 70px;
+}
+
+@media screen and (max-width : 1920px) {
+    .industries-we-serve-body {
+        padding: 0 100px;
+    }
+    .industries-data-container{
+        margin-top: 7rem;
+        -webkit-column-gap: 155px;
+        column-gap: 155px;
+    }
+    .insustry-card img{
+        width: 85px;
+        height: 85px;
+    }
+    .industries-title{
+        font-size: 44px;
+    }
+
+    .insustry-card h2{
+        text-align: center;
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+@media screen and (max-width : 1680px) {
+    .industries-we-serve-body {
+        padding: 0 50px;
+    }
+    .industries-data-container{
+        margin-top: 7rem;
+        -webkit-column-gap: 104px;
+        column-gap: 104px;
+    }
+    .insustry-card img{
+        width: 80px;
+        height: 80px;
+    }
+    .industries-title{
+        font-size: 42px;
+    }
+
+    .insustry-card h2{
+        text-align: center;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    @media screen and (min-height : 1200px) {
+        .industries-we-serve-body {
+            padding: 0 30px;
+        }
+        .industries-data-container{
+            margin-top: 8rem;
+            -webkit-column-gap: 80px;
+            column-gap: 110px;
+        }
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .industries-we-serve-body {
+        padding: 0;
+    }
+    .industries-data-container{
+        margin-top: 6.5rem;
+        -webkit-column-gap: 64px;
+        column-gap: 64px;
+    }
+    .insustry-card img{
+        width: 75px;
+        height: 75px;
+    }
+   .industries-title{
+        font-size: 40px;
+    }
+
+    .insustry-card h2{
+        text-align: center;
+        font-size: 17px;
+        line-height: 22px;
+    }   
+}
+@media screen and (max-width : 1280px) {
+    .industries-we-serve-body {
+        padding: 0;
+    }
+    .industries-data-container{
+        margin-top: 6.8rem;
+        -webkit-column-gap: 42px;
+        column-gap: 42px;
+    }
+    .insustry-card img{
+        width: 75px;
+        height: 75px;
+    }
+   .industries-title{
+        font-size: 40px;
+    }
+
+    .insustry-card h2{
+        text-align: center;
+        font-size: 17px;
+        line-height: 22px;
+    }   
+
+    @media screen and (min-height: 1024px) {
+        .industries-we-serve-body {
+            padding: 0;
+        }
+        .industries-data-container{
+            margin-top: 7.5rem;
+            -webkit-column-gap: 40px;
+            column-gap: 40px;
+        }
+        .insustry-card img{
+            width: 75px;
+            height: 75px;
+        }
+        .industries-title{
+            font-size: 40px;
+        }
+    
+        .insustry-card h2{
+            text-align: center;
+            font-size: 17px;
+            line-height: 22px;
+        }
+    }
+}
+@media screen and (max-width: 970px) {
+    .industries-we-serve-body {
+        padding: 0;
+    }
+    .industries-data-container{
+        margin-top: 7.5rem;
+        -webkit-column-gap: 50px;
+        column-gap: 50px;
+    }
+    .insustry-card img{
+        width: 75px;
+        height: 75px;
+    }
+    .industries-title{
+        font-size: 40px;
+    }
+
+    .insustry-card h2{
+        text-align: center;
+        font-size: 17px;
+        line-height: 22px;
+    }
+}
+@media  screen and (max-width:884px) {
+    .industries-we-serve-body {
+        padding: 0;
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 60px;
+        margin-bottom: 0;
+    }
+    .industries-title{
+        font-size: 40px;
+    }
+    .industries-data-wrapper{
+        flex-direction: column;
+    }
+    .industries-data-container{
+        width: 100%;
+        margin-top: 6rem;
+        row-gap: 0px;
+        -webkit-column-gap: 0vw;
+        column-gap: 0vw;
+    }
+    .insustry-card{
+        width: 190px;
+        padding-top: 0;
+        padding-bottom: 100px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .insustry-card img{
+        width: 60px;
+        height: 60px;
+    }
+    .insustry-card h2{
+        font-weight: 200;
+        font-size: 18px;
+        margin-top: 1.4rem;
+    } 
+    .industries-title{
+        font-size: 38px;
+    }
+}
+@media  screen and (max-width:750px) {
+    .industries-we-serve-body {
+        width: 98%;
+        margin-left: 1%;
+        margin-right: 1%;
+        padding: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .industries-data-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        margin-top: 4.4rem;
+        row-gap: 50px;
+        -webkit-column-gap: 66px;
+        column-gap: 66px;
+    }
+    .insustry-card{
+        width: 110px;
+        padding: 0;
+    }
+    .insustry-card img{
+        width: 52px;
+        height: 52px;
+    }
+    .industries-title{
+        font-size: 32px;
+        margin: 0 20px;
+    }
+    .insustry-card h2{
+        text-align: center;
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 1rem;
+    }
+}
+

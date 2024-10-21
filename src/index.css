@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+:root {
+  --font-base: 'Cormorant Upright', serif;
+  --font-alt: 'Open Sans', sans-serif;
+  --font-main:'Inter', sans-serif;
+  --font-poppins:'Poppins';
+  --font-poppins-bold:'Poppins-bold';
+  --font-nunito:'Nunito-Bold';
+  --font-bebas-neue: 'BebasNeue-Regular';
+  --font-opensans: 'OpenSans';
+  --font-koho: 'koho';
+  --menu-bg-color: #1d1d1d;
+  --theme-element-color: black;
+  --nav-link-a-hover: #2b363f;
+  --link-set-bg: #293241;
+  --phone-border: #000;
+  --textarea-border: #000;
+  --phone-border-width: '1px';
+  --textarea-border-width: '1px';
+  --color-golden: #DCCA87;
+  --color-black: #0C0C0C;
+  --color-gray: #545454;
+  --color-crimson: #F5EFDB;
+  --color-grey: #AAAAAA;
+  --color-white: #FFFFFF;
+  --border-color: #121212;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  transition: 0s ease-in;
+}
+canvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.slide-bottom {
+  -webkit-animation: slide-bottom 0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-bottom 0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@media screen and (min-width : 2000px) {
+  .small-screen-image{
+      display: none;
+  }
+  
+}
+@font-face {
+  font-family: 'Nunito-Bold';
+    src:url('fonts/Nunito-ExtraBold.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins';
+    src:url('fonts/Poppins-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins-bold';
+    src:url('fonts/Poppins-ExtraBold.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'BebasNeue-Regular';
+    src:url('fonts/BebasNeue-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+    src:url('fonts/OpenSans-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'koho';
+    src:url('fonts/KoHo-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: 400;
+    font-style: normal;
+}

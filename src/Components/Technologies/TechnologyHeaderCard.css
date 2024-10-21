@@ -1,0 +1,32 @@
+.technology-header-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-poppins);
+    /* margin-right: 5px; */
+    width: 100%;
+    height: 40px;
+    min-width: 80px;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+.under-line{
+    width: 100%;
+    height: 3px;
+    /* border-radius: 5px; */
+}
+
+.technology-header-card p{
+    font-size: 15px;
+    font-weight: bold;
+}
+@media screen and (max-width:750px){
+    .technology-header-card p{
+        font-size: 18px;
+    }
+    .technology-header-card{
+        min-width: 105px;
+    }
+}

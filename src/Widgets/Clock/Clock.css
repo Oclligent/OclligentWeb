@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100');
+ #root {
+	 position: relative;
+}
+.copy {
+	 width: 100%;
+	 position: absolute;
+	 text-align: center;
+	 font-family: 'Lato', sans-serif;
+	 color: rgba(245, 241, 227, 0.45);
+	 font-size: 13px;
+	 font-weight: 100;
+	 transform: translateY(-60px);
+	 letter-spacing: 0.5px;
+}
+.clock {
+	 width: 90px;
+	 height: 90px;
+	 /* border: 2px solid #8495a9; */
+	 border-radius: 50%;
+	 margin: 10px 0;
+	 position: relative;
+	 box-sizing: border-box;
+	 background: #f8f8f852;
+	 padding: 20px;
+	 box-shadow: 0 0 20px rgba(34, 34, 34, 0.411), inset 5px 5px 20px rgba(119, 119, 119, 0.3);
+}
+ /* .clock:before {
+	 content: '';
+	 height: 100px;
+	 width: 100px;
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 background: linear-gradient(rgba(34, 34, 34, 0.1), transparent);
+	 z-index: 1;
+	 transform-origin: 50% 0;
+	 transform: translateX(-50%) rotate(-45deg);
+} */
+.nums {
+	 position: absolute;
+	 left: 50%;
+	 top: 50%;
+}
+.num {
+	 position: absolute;
+	 background: #aaa;
+	 height: 5px;
+	 width: 2px;
+	 border-radius: 1px;
+}
+.num:nth-of-type(1) {
+	 transform: translate(-50%, -50%) rotate(0deg) translateY(84px);
+	 background: #36213e;
+}
+.num:nth-of-type(2) {
+	 transform: translate(-50%, -50%) rotate(30deg) translateY(84px);
+}
+.num:nth-of-type(3) {
+	 transform: translate(-50%, -50%) rotate(60deg) translateY(84px);
+}
+.num:nth-of-type(4) {
+	 transform: translate(-50%, -50%) rotate(90deg) translateY(84px);
+	 background: #36213e;
+}
+.num:nth-of-type(5) {
+	 transform: translate(-50%, -50%) rotate(120deg) translateY(84px);
+}
+.num:nth-of-type(6) {
+	 transform: translate(-50%, -50%) rotate(150deg) translateY(84px);
+}
+.num:nth-of-type(7) {
+	 transform: translate(-50%, -50%) rotate(180deg) translateY(84px);
+	 background: #36213e;
+}
+.num:nth-of-type(8) {
+	 transform: translate(-50%, -50%) rotate(210deg) translateY(84px);
+}
+.num:nth-of-type(9) {
+	 transform: translate(-50%, -50%) rotate(240deg) translateY(84px);
+}
+.num:nth-of-type(10) {
+	 transform: translate(-50%, -50%) rotate(270deg) translateY(84px);
+	 background: #36213e;
+}
+.num:nth-of-type(11) {
+	 transform: translate(-50%, -50%) rotate(300deg) translateY(84px);
+}
+.num:nth-of-type(12) {
+	 transform: translate(-50%, -50%) rotate(330deg) translateY(84px);
+}
+.clock-container {
+	 position: relative;
+	 width: 100%;
+	 height: 100%;
+	 box-sizing: border-box;
+}
+.clock-container:before {
+	 content: '';
+	 height: 8px;
+	 width: 8px;
+	 background: #36213e;
+	 top: 50%;
+	 left: 50%;
+	 position: absolute;
+	 z-index: 1;
+	 border-radius: 50%;
+	 transform: translate(-50%, -50%);
+}
+.hand {
+	 background: white;
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 transform: translateY(-50%) rotate(-90deg);
+	 transform-origin: 0% 50%;
+}
+.hand.hour {
+	 height: 4px;
+	 width: 35%;
+	 border-radius: 2px;
+	 background: white;
+}
+.hand.min {
+	 height: 2px;
+	 width: 44%;
+	 border-radius: 1px;
+}
+.hand.second {
+	 transition: transform 200ms cubic-bezier(0.4, 2.08, 0.55, 0.44);
+	 height: 1px;
+	 width: 50%;
+	 border-radius: 0.5px;
+	 background: red;
+}
+.hand.hoursl {
+	 height: 4px;
+	 width: 35%;
+	 border-radius: 2px;
+	 background: white;
+}
+.hand.minsl {
+	 height: 2px;
+	 width: 44%;
+	 border-radius: 1px;
+}
+.hand.secondsl {
+	 transition: transform 200ms cubic-bezier(0.4, 2.08, 0.55, 0.44);
+	 height: 1px;
+	 width: 50%;
+	 border-radius: 0.5px;
+	 background: red;
+}
+.hand.hourau {
+	 height: 4px;
+	 width: 35%;
+	 border-radius: 2px;
+	 
+}
+.hand.minau {
+	 height: 2px;
+	 width: 44%;
+	 border-radius: 1px;
+}
+.hand.secondau {
+	 transition: transform 200ms cubic-bezier(0.4, 2.08, 0.55, 0.44);
+	 height: 1px;
+	 width: 50%;
+	 border-radius: 0.5px;
+	 background: red;
+}
+.hand.hourgr {
+	 height: 4px;
+	 width: 35%;
+	 border-radius: 2px; 
+}
+.hand.mingr {
+	 height: 2px;
+	 width: 44%;
+	 border-radius: 1px;
+}
+.hand.secondgr {
+	 transition: transform 200ms cubic-bezier(0.4, 2.08, 0.55, 0.44);
+	 height: 1px;
+	 width: 50%;
+	 border-radius: 0.5px;
+	 background: red;
+}
+ 

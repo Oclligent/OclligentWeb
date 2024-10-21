@@ -1,0 +1,27 @@
+.mainDiv{
+    width: 100%;
+    overflow: hidden;
+}
+body{
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+body::-webkit-scrollbar{
+    width: 1.1vw;
+    background: rgb(224, 224, 224);
+}
+  
+body::-webkit-scrollbar-track{
+    background: rgb(224, 224, 224);
+    margin-block: 0.5em;
+}
+  
+body::-webkit-scrollbar-thumb{
+    background: #00a8db;
+    border-radius: 0.5vw;
+    border: 0.14em solid rgb(224, 224, 224);
+}
+  
+body::-webkit-scrollbar-thumb:hover{
+    background: #0794be;
+}

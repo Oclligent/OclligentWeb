@@ -1,0 +1,11 @@
+.whoweare-container{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+}
+@media  screen and (max-width:950px) {
+    .whoweare-container{
+        width: 100%;
+        height: auto;
+    }
+}

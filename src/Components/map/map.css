@@ -1,0 +1,370 @@
+.map-container{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-poppins);
+}
+.mapimg{
+    width: 100%;
+    height: auto;
+}
+.all-locations{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.noneed{
+    visibility: hidden;
+}
+.position-details-container1{
+    width: 42vw;
+    height: 16vw;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 28.7%;
+    top: 29.8%;
+    z-index: 20;
+}
+.position-details-container2{
+    width: 42vw;
+    height: 16vw;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 17%;
+    top: 10%;
+    z-index: 20;
+}
+.position-details-container3{
+    width: 42vw;
+    height: 16vw;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 43.8%;
+    top: 48.1%;
+    z-index: 20;
+}
+.position-details-container4{
+    width: 42vw;
+    height: 16vw;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 50.3%;
+    top: 6%;
+    z-index: 20;
+}
+.line-container{
+    padding-top: 10px;
+    padding-right: 4px;
+    top: 0;
+}
+.line{
+    display: inline-block;
+    width: auto;
+    height: 100%;
+}
+.country-details{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 84%;
+    height: 100%;
+    top: 0;
+}
+.c_mirror{
+    text-align: right;
+}
+.ad_mirror{
+    right: 2%;
+}
+.l_mirror{
+    padding-left: 4px;
+    padding-right: 0;
+}
+.country-left{
+    display: flex;
+    flex-direction: column;
+}
+.details-topic h2, h4{
+    font-family: var(--font-poppins);
+}
+.details-topic h4{
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 300;
+}
+.details-topic h2{
+    font-size: 22px;
+    line-height: 22px;
+    padding-top: 4px;
+    font-weight: 600;
+    color: rgb(0, 174, 255);
+}
+.cl_mirror{
+    margin-left: 15px;
+    margin-right: 0;
+}
+.cl_normal{
+    margin-right: 15px;
+    margin-left: 0;
+}
+.country-right{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.address-details{
+    position: absolute;
+    bottom: 5.5vw;
+    left: 2%;
+}
+.address-details p{
+    font-size: 17px;
+}
+.get_hide{
+    animation: fadeout 1.2s ease-out;
+    animation-fill-mode: forwards;
+}
+.get_show{
+    animation: fadein 1.2s ease-in;
+}
+.line-hover{
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 2s ease-in forwards;
+}
+@keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+}
+.country-hover{
+    animation: fadein 1.6s ease-in;
+}
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+.line-hover-out{
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+    animation: dashout 2s ease-out forwards;
+}
+@keyframes dashout {
+    to {
+      stroke-dashoffset: 1000;
+    }
+}
+.country-hover-out{
+    animation: fadeout 2s ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeout {
+    0%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+
+    }
+  }
+.position1{
+    width: 6vw;
+    height: 6vw;
+    position: absolute;
+    display: block;
+    left: 68.1%;
+    top: 55.3%;
+}
+.position2{
+    width: 6vw;
+    height: 6vw;
+    position: absolute;
+    display: block;
+    left: 14%;
+    top: 35.5%;
+}
+.position3{
+    width: 6vw;
+    height: 6vw;
+    position: absolute;
+    display: block;
+    left: 83.2%;
+    top: 73.6%;
+}
+.position4{
+    width: 6vw;
+    height: 6vw;
+    position: absolute;
+    display: block;
+    left: 47.3%;
+    top: 31.5%;
+}
+.flglbl{
+    display: none;
+    padding: 1px 8px;
+    position: absolute;
+    left: 34%;
+    top: -7%;
+    color: rgb(255, 255, 255);
+    background: rgb(127, 127, 127);
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.marker{
+    width: 16%;
+    height: 10%;
+    position: relative;
+    left: 42%;
+    top: 45%;
+    background: rgba(146, 201, 196, 0.7);
+    border-radius: 50%;
+    z-index: 10;
+}
+.markerimg{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 25%;
+    top: 0.5%;
+    z-index: 10;
+}
+.marker-animation1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    background: rgba(133, 231, 255, 0.7);
+    border-radius: 50%;
+    animation: pulse 2400ms ease-out infinite;
+}
+.marker-animation2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    background: rgba(133, 231, 255, 0.7);
+    border-radius: 50%;
+    animation: pulse 2400ms ease-out infinite;
+    opacity: 0;
+    animation-delay: .5s;
+}
+@keyframes pulse {
+    0%{
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.8;
+    }
+    100%{
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+@media  screen and (max-width:1920px) {
+    .address-details{
+        bottom: 8.5vw;
+    }
+    .flglbl{
+        left: 34%;
+        top: -2%;
+    }
+}
+@media screen and (max-width:1680px) {
+    .address-details{
+        bottom: 7.5vw;
+    }
+    .flglbl{
+        left: 34%;
+        top: -4%;
+    }
+    @media screen and (min-height : 1200px) {
+        .address-details{
+            bottom: 7vw;
+        }
+        .flglbl{
+            left: 34%;
+            top: -4%;
+        }
+    }
+}
+@media screen and (max-width:1366px) {
+    .address-details{
+        bottom: 5.2vw;
+    }
+    .flglbl{
+        left: 33%;
+        top: -6%;
+    }
+}
+@media screen and (max-width : 1280px) {
+    .address-details{
+        bottom: 4.8vw;
+    }
+    .flglbl{
+        left: 33%;
+        top: -7%;
+    }
+    @media screen and (min-height: 1024px) {
+        .address-details{
+            bottom: 4.8vw;
+        }
+        .flglbl{
+            left: 34%;
+            top: -8%;
+        }
+    }
+}
+@media screen and (max-width:970px) {
+    .address-details{
+        bottom: 1.2vw;
+    }
+    .flglbl{
+        left: 32%;
+        top: -13%;
+    }
+    .map-container{
+        height: auto;
+    }
+}
+@media screen and (max-width:884px) {
+    .mapimg{
+        display: none;
+    }
+    .position1{
+        display: none;
+    }
+    .position2{
+        display: none;
+    }
+    .position3{
+        display: none;
+    }
+    .position4{
+        display: none;
+    }
+}
+@media screen and (max-width:750px) {
+    
+}

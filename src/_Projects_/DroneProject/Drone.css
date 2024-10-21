@@ -1,0 +1,83 @@
+.drone-body{
+    width: 100%;
+    overflow: hidden;
+}
+.container1{
+    position: absolute;
+    display: block;
+    width: auto;
+    left: 0;
+}
+.webgl_drone{
+    position: relative;
+    top:10%;
+    left: 0;
+    z-index: -1;
+    outline: none;
+}
+.header{
+    font-family: var(--font-bebas-neue);
+    font-weight: 100;
+    color: #ffffff;
+    font-size: 70px;
+    letter-spacing: 2px;
+    margin-top: 80px;
+    margin-left: 45px;
+}
+.info{
+    font-family: var(--font-opensans);
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    line-height: 36px;
+    margin-left: 45px;
+}
+.project-btn{
+    display: flex;
+    column-gap: 10px;
+}
+.project-btn button{
+    flex: 1;
+    border-radius: 35px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.lm{
+    text-align: center;
+    padding: 10px;
+    margin-left: 45px;
+    margin-top: 30px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+.project-btn .lm:hover{
+    background-color: rgb(182, 182, 182);
+    color: rgba(255, 255, 255);
+}
+.sn{
+    text-align: center;
+    padding: 8px 10px;
+    margin-top: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border-color: rgb(255, 255, 255);
+    border-width: 2px;
+}
+.project-btn .sn:hover{
+    background-color: rgba(255, 255, 255, 0.116);
+    color: rgba(255, 255, 255);
+    font-weight: bold;
+}
+.logo{
+    font-family: 'Cinzel Decorative Black';
+}
+
+@media screen and (max-width : 750px) {
+    .container1{
+        display: none;
+    }
+}
