@@ -11,7 +11,7 @@ function Body({ theme }) {
             <div className='circle height2 cl3' style={{ display: theme ? 'none' : "block" }}></div>
             <div className='section' id="left">
                 <div className='wrapper'>
-                    <h1 className='title'>Innovative, Effective<br></br>With Quality<br></br>Assured3 </h1>
+                    <h1 className='title'>Innovative, Effective<br></br>With Quality<br></br>Assured6 </h1>
                     <div className='small-screen-image'>
                         <img src={images.coding} alt='home' className='home-image' />
                     </div>
